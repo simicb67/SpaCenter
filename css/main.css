@@ -1,0 +1,1231 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*Global styles*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:62.5%;
+    font-weight: 300;
+    color:#000;
+    font-family: 'Titillium Web', serif;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 8em;
+    color:#ece4e1;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size:  3.5em;
+    color:#bb2f5c;
+    font-weight: 300;
+}
+h4 {
+    font-size: 2.2em;
+    color:#bb2f5c;
+}
+p {
+    font-size: 1.4em;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:0 auto;
+}
+.headerContainer{
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0 auto;
+    background-color: #ece4e1;
+}
+.btn {
+    font-weight: 500;
+    font-size: 2.4em;
+    color: #000;
+    background: #bb2f5c;
+    padding: 6px 27px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*End global styles*/
+
+/*===HEADER===*/
+header {
+    padding: 10px 0 8px;
+}
+.header-logo {
+    display: inline-block; /*!!!*/ 
+
+}
+nav {
+    
+    display: none;  /*dont show menu*/
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#bb2f5c;
+    text-align: center;
+    color: #000;
+}
+nav.open {
+    display: table;
+}
+nav ul {
+    display: table-cell;
+    vertical-align: middle;
+}
+nav a {
+    color:#fff;
+    font-size: 3.6em;
+    line-height: 70px;
+    padding:5px 10px;
+}
+nav li {
+    list-style-type: none; /*list style without disc!*/
+}
+nav .btn{
+    background:#ece4e1;
+    font-size: 3.6em;
+}
+/*nav*/ .close {
+    width:45px;
+    height:45px;
+    position: absolute;
+    top:20px;
+    right:20px;
+    display: block;
+    margin:0;
+}
+/*nav*/ .close span {
+    width: 35px;
+    height: 2px;
+    background: white;
+    display: block;
+    transform: rotate(45deg);
+}
+/*nav*/ .close span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+.burger {
+    width: 44px;
+    height: 25px;
+    padding: 5px 0;
+    float: right;
+    margin-top: 22px;
+}
+.burger span {
+    width: 100%;
+    height: 2px;
+    background-color: #bb2f5c;
+    display: block;
+    margin-top: 9px;
+}
+.burger span:nth-child(1) {
+    margin-top: 0;
+}
+/*End Header*/
+
+/*Hero section*/
+.hero {
+    background-image: url('../img/hero.png');
+    height: 500px;
+    background-position: 48% 50%;
+    
+}
+.hero-c {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.hero h1 {
+    font-size: 2.8em;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color:#fff;
+    font-weight: 200;
+    padding-bottom: 25px;
+}
+.hero p {
+    color:#fff;
+    text-align: center;
+}
+.hero hr{
+    width: 35%;
+}
+.line {
+    padding-left: 39%;
+}
+.hero .btn {
+    color:#fff;
+    font-size: 2.2em;
+    padding: 3px 15px;
+    margin: 10%;
+}
+/*End hero section*/
+
+/*Services*/ 
+.container h2 {
+    margin: 0;
+}
+.container h3 {
+    margin-top: -90px;
+    margin-left: -20px;
+}
+.services img {
+    border-radius: 5%;
+    box-shadow: -6px -6px 0px 0px rgb(236, 228, 225);
+    
+}
+.title {
+    padding-bottom: 25px;
+}
+.container h4 {
+    margin-top: 5px;
+}
+strong {
+    font-size: 2em;
+    color:#bb2f5c;
+}
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 15px;
+}
+.serv {
+    order: 2;
+
+}
+.serv-img {
+    order: 1;
+}
+
+/*massage*/
+.massage {
+    margin-top: 80px; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*End services*/
+
+/*membership*/
+.membership-container {
+    background-color: #ece4e1;
+    margin-top: 50px;
+    padding-bottom: 15px;
+}
+.membership h2 {
+    font-size: 5em;
+    margin: 0;
+    color:white;
+    padding-top: 15px;
+}
+.membership h3 {
+    margin-top: -75px;
+    margin-left: -15px;
+}
+.text-title{
+    text-align: center;
+    margin-top: -33px;
+}
+.membership p {
+    font-size: 1.2em;
+}
+i {
+    color: #bb2f5c;
+}
+.membership .title {
+    padding-bottom: 0px;
+}
+/*card!!!*/
+.card-m {
+    border: 3px solid #bb2f5c;
+    background-color: #f9f2f6;
+    width: 70%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 10%; 
+    border-radius: 3%;
+    box-shadow: 0px 0px 0px 8px rgb(249, 242, 246);
+} 
+.card-m h6 {
+    font-size: 1.6em;
+    margin-top: 0px;
+}
+.card-m h5 {
+    font-size: 2.8em;
+    color: #bb2f5c;
+    margin-top: -20px;
+}
+.card-m small {
+    font-size: 1.2em;
+}
+.card-m p {
+    margin-top: -10px;
+}
+.img-c img {
+    width: 65%;
+}
+.text-position {
+    margin-top: -30px;
+}
+.arround {
+    background-color: #f9f2f6;
+    margin: auto;
+    display: block;
+    border-radius: 2%;
+}
+/*end membership*/
+
+/*gallery*/
+.gallery .text-title {
+    margin-top: -70px;
+}
+.gallery li {
+    height: 0;
+    padding-bottom: 56.25%; /* 9/16x100 for 16:9 image format*/
+    overflow: hidden;
+    position: relative;
+}
+.gallery li img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 2px;
+}
+/*end gallery*/
+
+/*hours and location*/
+.hours .title {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.hours h2 {
+    font-size: 3.5em;
+}
+.hours h3 {
+    margin-top: -55px;
+    margin-left: -20px;
+    font-size: 3em;
+}
+.hours li {
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-bottom: 10px;
+    float: left;
+}
+.hours .btn {
+    font-size: 1em;
+    padding: 1px 2px;
+    border-radius: 4px;
+    color:#fff;
+}
+.hours p {
+    text-align: center;
+    font-size: 1.2em;
+}
+.hours .unstyle-list {
+    padding-bottom: 35px;
+}
+/*end hours*/
+/*back to top*/
+#top {
+    display: inline-block;
+    background-color: rgba(187, 47, 92, 0.29);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 35px;
+    color: #fff;
+}
+#top:hover {
+    cursor: pointer;
+    background-color: rgba(187, 47, 92);
+}
+#top.show {
+    opacity: 1;
+    visibility: visible;
+}
+/*end top*/
+/*footer*/
+.footerContainer {
+    max-width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin:0 auto;
+    background-color: #ece4e1;
+}
+.footerContainer img {
+    width: 70%;
+}
+.copy small {
+    font-size: 1em;
+}
+.footerContainer li{
+    width: 25%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    margin-top: -27px;
+    float: right;
+}
+/*end footer*/
+/*modal*/
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.modal.open {
+    display: block;
+}
+.modal-wrap {
+    max-width: 870px;
+    width: 90%;
+    padding: 20px;
+    background-color: #ece4e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    overflow-y: auto;
+}
+.modal-wrap > * {
+    display: inline-block;
+}
+.modal-wrap  .close span {
+    background-color: #d6d6d6;
+
+}
+.modal-wrap h4 {
+    font-size: 1.8em;
+    width: 100%;
+    color: #000;
+}
+.modal-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+legend {
+    font-size: 1.6em;
+    padding-bottom: 30px;
+}
+input {
+    border: 1px solid #d6d6d6;
+    width: 100%;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+input::placeholder {
+    color: #9b9b9b;
+    font-style: italic;
+}
+input:focus {
+    outline: none;
+    border-color: green;
+}
+input.btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    padding: 11px 15px;
+    font-size: 2.2em;
+    color: #fff;
+}
+input[type="date"]:before,
+input[type="time"]:before {
+    content: attr(placeholder) !important;
+    color: #9b9b9b;
+    font-style: italic;
+    margin-right: 0.5em;
+}
+/*end modal*/
+/*Header 768*/ 
+@media only screen and (min-width: 768px) {
+    .headerContainer{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    nav {
+        display: block;
+        position: initial;
+        width: auto;
+        height: auto;
+        background:inherit;
+        float:right;
+    }
+    nav li {
+        float:left;
+    }
+    nav a {
+        color:#000;
+        margin-left: 7px;
+    }
+    nav a:not(.btn).active,
+    nav a:not(.btn):hover {
+        color: #bb2f5c;
+        border-bottom: 1px solid #bb2f5c;
+    }
+    nav a,
+    nav a.btn {
+        font-size:1.4em;
+    }
+    nav a.btn {
+        color:#fff;
+        background:#bb2f5c;
+    }
+    .burger,
+    nav .close {
+        display: none;
+    }
+/*End header*/
+
+/*Hero section*/
+    .line {
+        padding-left: 44%;
+    }
+    .hero hr{
+        width:20%;
+    }
+    .hero h1 {
+        font-size: 3.6em;
+        padding-bottom: 45px; 
+    }
+    .hero .btn {
+        margin: 34%;
+    }
+/*End hero section*/
+
+/*Services*/ 
+.container {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.container h2 {
+    font-size: 13em;
+    margin: 0;
+}
+.container h3 {
+    font-size: 6em;
+    margin-top: -150px;
+    margin-left: -40px;
+}
+.pool img {
+    border-radius: 5%;
+}
+.title {
+    padding-bottom: 25px;
+}
+.container h4 {
+    margin-top: 0px;
+    font-size: 2.4em;
+}
+p {
+    font-size: 1.6em;
+}
+strong {
+    font-size: 2.4em;
+    color:#bb2f5c;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}  
+.serv {
+    order:1;
+    width:49%;
+    }
+/*massage*/
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.massage {
+    width:33.3%;
+    margin:1%;
+}
+.text-m p {
+    height: 125px;
+}
+/*End services*/
+
+/*membership*/
+.membership p {
+    font-size: 1.6em;
+}
+.membership h3 {
+    margin-top: -170px;
+    margin-left: -45px;
+}
+.card-m {
+    margin:2%;
+}
+.membership .card {
+    margin-top: 5%;
+}
+/*end membership*/
+
+/*gallery*/
+.gallery li {
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding-bottom: 27.56%; /* 9/16x49 because we have 2 columns*/
+    float: left;
+    }
+/*end gallery*/
+
+/*hours and location*/
+.hours h2 {
+    font-size: 8em;
+}
+.hours h3 {
+    font-size: 5em;
+    margin-top: -105px;
+}
+.hours li {
+    width: 24%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    /*padding-bottom: 27.56%;*/
+    float: left;
+}
+.hours .unstyle-list {
+    margin-top: 90px;
+}
+.hours p {
+    font-size: 1.4em;
+}
+.hours .btn {
+    padding: 1px 5px;
+}
+/*end hours*/
+
+/*footer*/
+.footerContainer li{
+    width: 10%;
+}
+.footerContainer{
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+/*end footer*/
+
+/*modal*/
+.modal-wrap {
+        padding: 
+      }
+      form {
+        text-align: left;
+      }
+     
+      input {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: calc(50% - 22px);
+      }
+      input.width_modal,
+      input.btn {
+        width: calc(100% - 22px);
+      }
+      fieldset {
+        margin-bottom: 50px;
+      }
+      fieldset:last-of-type {
+        margin-bottom: 0;
+      }
+      legend {
+        margin-left: 10px;
+        text-align: center;
+      }
+/*zoom icon*/
+    .gallery li::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.44);
+        background-image: url(../img/zoom-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+    }
+    .gallery li:hover::after {
+        opacity: 1;
+        transition: opacity .3s ease-out;   
+    }
+}
+/*end modal*/
+/*Header 992*/
+@media only screen and (min-width: 992px){
+
+    .headerContainer {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    nav a {
+        color:#000;
+        margin-left: 20px;
+    }
+    nav a,
+    nav a.btn {
+        font-size:1.6em;
+    }
+/*End header*/
+
+/*Hero section*/
+    .hero hr {
+        width: 18%;
+    }
+    .line {
+        padding-left: 45%;
+    }
+    .hero h1 {
+        font-size:4em;
+        padding-bottom: 30px;
+    }
+    .hero .btn {
+        margin:37%;
+    }
+/*End hero section*/
+
+/*services*/
+.container {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.container h2 {
+    font-size: 15em;
+    /*margin: 0;*/
+}
+.container h3 {
+    font-size: 7em;
+    margin-top: -175px;
+    margin-left: -45px;
+}
+strong {
+    font-size: 2.6em;
+    color:#bb2f5c;
+}
+p {
+    font-size: 1.8em;
+}
+.container h4 {
+    font-size: 2.6em;
+}
+.wrapper {
+    padding-bottom: 100px;
+}
+/*end services*/
+
+/*membership*/
+.membership h3 {
+    margin-top: -200px;
+    margin-left: -50px;
+}
+.membership p {
+    font-size: 1.8em;
+}
+.membership h6 {
+    font-size: 2.2em;
+}
+/*end membership*/
+
+/*gallery*/
+.gallery li {
+    width: calc(33.333% - 3px); 
+    padding-bottom: 21.75%; /* 9/16x33.333 because we have 3 columns */
+    margin-right: 3px;
+    margin-bottom: 3px;
+    }
+.gallery li.width_gallery {
+    padding-right: calc(50%);
+}
+/*end gallery*/
+
+/*hours and location*/
+.hours h2 {
+    font-size: 11em;
+}
+.hours h3 {
+    font-size: 6em;
+    margin-top: -135px;
+}
+.hours p {
+    font-size: 1.8em;
+}
+.hours .btn {
+    font-size: 1em;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+.hours .unstyle-list {
+    margin-top: 110px;
+}
+/*end hours*/
+
+/*footer*/
+.copy small {
+    font-size: 1.2em;
+}
+.footerContainer li {
+    margin-top: -35px;
+}
+.footerContainer {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*end footer*/
+/*modal*/
+.modal-wrap {
+    padding: 50px;
+}
+}
+
+/*Header 1224*/
+@media only screen and (min-width: 1224px){
+
+    .headerContainer {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    nav a {
+        color:#000;
+        margin-left: 20px;
+    }
+    nav a,
+    nav a.btn {
+        font-size:1.8em;
+    }
+/*End header*/
+
+/*Hero section*/
+    .hero hr {
+        width: 15%;
+    }
+    .line {
+        padding-left: 46%;
+    }
+    .hero h1 {
+        font-size:4.8em;
+        padding-bottom: 10px;
+    }
+    .hero .btn {
+        margin:41%;
+    }
+/*End hero section*/
+
+/*Services*/
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.container h2 {
+    font-size: 18em;
+    margin: 0;
+}
+.container h3 {
+    font-size: 8em;
+    margin-top: -205px;
+    margin-left: -45px;
+}
+.container h4 {
+    font-size: 3em;
+}
+/*End services*/
+
+/*membership*/
+.membership h3 {
+    margin-top: -230px;
+    margin-left: -60px;
+}
+.membership p {
+    font-size: 2.4em;
+}
+.membership h6 {
+    font-size: 2.4em;
+}
+.membership h5 {
+    font-size: 3em;
+}
+.card-m small {
+    font-size: 0.9em;
+}
+/*end membership*/
+
+/*gallery*/
+.gallery .unstyle-list {
+    padding-top: 55px;
+}
+.gallery p {
+    font-size: 2.4em;
+}
+/*end gallery*/
+
+/*hours and location*/
+.hours h2 {
+    font-size: 14em;
+}
+.hours h3 {
+    font-size: 8em;
+    margin-top: -180px;
+}
+.hours p {
+    font-size: 2.4em;
+}
+.hours .unstyle-list {
+    margin-top: 150px;
+}
+.hours .btn {
+    font-size: 1em;
+    padding: 2px 10px;
+    border-radius: 6px;
+}
+/*end hours*/
+
+/*footer*/
+.footerContainer {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.footerContainer li{
+    width: 7%;
+}
+.footerContainer small {
+    font-size: 1.4em;
+}
+/*end footer*/
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.unstyle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-center {      /*!!!!!!*/
+    text-align: center;
+}
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+button {
+    background: transparent;
+    border: none;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
