@@ -1,6 +1,7 @@
+
 var t = $('#top');
 $(window).scroll(function() {
-	if ($(window).scrollTop()> 1800) {
+	if ($(window).scrollTop()> 300) {
 		t.addClass('show');
 	} else {
 		t.removeClass('show');
@@ -29,6 +30,11 @@ $('.nav .close').on('click', function(event) {
 	event.preventDefault();
 	/* Act on the event */
 	$('.nav').removeClass('open');
+});
+$(window).on('load', function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
 });
 var safari   = navigator.userAgent.indexOf("Safari") > -1;
 var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
