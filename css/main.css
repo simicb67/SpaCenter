@@ -318,7 +318,7 @@ strong {
 }
 .serv strong {
     position: relative;
-    color:#000;
+    color:rgb(204, 198, 196);
     
 }
 .serv span {
@@ -492,22 +492,22 @@ i {
 /*footer*/
 .footerContainer {
     max-width: auto;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin:0 auto;
     background-color: #ece4e1;
 }
-.footerContainer img {
-    width: 70%;
+.logo-f {
+    display: inline-block;
 }
-.copy small {
-    font-size: 1em;
-}
-.footerContainer li{
-    width: 25%;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    margin-top: -27px;
+.footer ul {
+    padding-top: 65px;
+    display: inline-flex;
     float: right;
+}
+.footer li img {
+    max-width: 55px;
 }
 /*end footer*/
 /*modal*/
@@ -778,13 +778,16 @@ strong {
 /*end hours*/
 
 /*footer*/
-.footerContainer li{
-    width: 10%;
-}
-.footerContainer{
+.footerContainer {
     padding-left: 15px;
     padding-right: 15px;
-    }
+}
+.footerContainer ul {
+    padding-top: 80px;
+}
+.footerContainer li img {
+    max-width: 70px;
+}
 /*end footer*/
 
 /*modal*/
@@ -924,15 +927,12 @@ p {
 /*end hours*/
 
 /*footer*/
-.copy small {
-    font-size: 1.2em;
-}
-.footerContainer li {
-    margin-top: -35px;
-}
 .footerContainer {
     padding-left: 25px;
     padding-right: 25px;
+}
+.footerContainer li img {
+    max-width: 90px;
 }
 /*end footer*/
 /*modal*/
@@ -942,7 +942,7 @@ p {
 }
 
 /*Header 1224*/
-@media only screen and (min-width: 1224px){
+@media only screen and (min-width: 1228px){
 
     .headerContainer {
         padding-left: 55px;
@@ -959,12 +959,6 @@ p {
 /*End header*/
 
 /*Hero section*/
-    .hero hr {
-        width: 15%;
-    }
-    .line {
-        padding-left: 46%;
-    }
     .hero h1 {
         font-size:4.8em;
         padding-bottom: 10px;
@@ -1043,12 +1037,6 @@ p {
 .footerContainer {
     padding-left: 55px;
     padding-right: 55px;
-}
-.footerContainer li{
-    width: 7%;
-}
-.footerContainer small {
-    font-size: 1.4em;
 }
 /*end footer*/
 }
