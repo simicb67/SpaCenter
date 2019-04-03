@@ -16,6 +16,7 @@
   <link  href="https://fonts.googleapis.com/css?family=Pacifico|Titillium+Web:300,400,600,700" rel="stylesheet">
 
   <link rel="stylesheet" href="css/flexslider.css">
+  <link  rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   
@@ -52,23 +53,17 @@
           <ul class="slides">
             <li>
               <div class="hero_1">
-                <p>Do more of what makes you happy</p>
-                  <div class="line">
-                    <hr>
-                  </div>
-                  <h1>Rest and your energy will be restored<br><br></h1>
-                  <div class="btn-possition">
+                <p><span>Do more of what makes you happy</span></p>
+                  <h1>Rest and your energy will be restored</h1>
+                  <div class="">
                     <a href="javascript;" class="btn book">Book an appointment</a>
                   </div>
               </div>
             </li>
             <li>
               <div class="hero_2">
-                <p>Do more of what makes you happy</p>
-                  <div class="line">
-                    <hr>
-                  </div>
-                  <h1>True meditation is letting go of manipulating our experience</h1>
+                <p><span>Do more of what makes you happy</span></p>
+                  <h1>Real meditation is relaxation</h1>
                   <div class="btn-possition">
                     <a href="javascript;" class="btn book">Book an appointment</a>
                   </div>
@@ -76,11 +71,8 @@
             </li>  
             <li>
               <div class="hero_3">
-                <p>Do more of what makes you happy</p>
-                  <div class="line">
-                    <hr>
-                  </div>
-                  <h1>Come experience the secrets of relaxation<br><br></h1>
+                <p><span>Do more of what makes you happy</span></p>
+                  <h1>Come experience the secrets of relaxation</h1>
                   <div class="btn-possition">
                     <a href="javascript;" class="btn book">Book an appointment</a>
                   </div>
@@ -88,15 +80,6 @@
             </li>   
           </ul>
         </div>
-        
-          <!--<br><br><br>
-          <p>Do more of what makes you happy</p>
-          <div class="line">
-          <hr>
-          </div>
-          <h1>Rest and your energy will be restored</h1>
-          <div class="btn-possition">
-          <a href="javascript;" class="btn book">Book an appointment</a></div>-->
       </section>
       <section id="Services">
       <section class="services">
@@ -116,14 +99,14 @@
             <div class="serv">
               <h4>Swimming pool</h4>
               <p>Each of the pools, that we offer has  its own distinct advantages, and you will also find that they have different styles that separate them from one another.</p>
-              <p>Price per hour&nbsp &nbsp &nbsp <strong>$20</strong></p>
+              <strong>Price per hour <span>$20</span></strong>
             </div>
           </div>
           <div class="wrapper">
             <div class="serv">
               <h4>Sauna</h4>
               <p>Each of the pools, that we offer has  its own distinct advantages, and you will also find that they have different styles that separate them from one another.</p>
-              <p>Price per hour&nbsp &nbsp &nbsp <strong>$20</strong></p>
+              <strong>Price per hour <span>$20</span></strong>
             </div>
             <div class="serv serv-img">
               <img src="img/steam-bath.png" alt="steam-bath">
@@ -136,7 +119,7 @@
             <div class="serv">
               <h4>Steam bath</h4>
               <p>Each of the pools, that we offer has  its own distinct advantages, and you will also find that they have different styles that separate them from one another.</p>
-              <p>Price per hour&nbsp &nbsp &nbsp <strong>$20</strong></p>
+              <strong>Price per hour <span>$20</span></strong>
             </div>
           </div>
 
@@ -253,24 +236,23 @@
               <p>Step into the world of <i>luxury</i>, surprise your loved ones and treat them with pleasure in the spa. Different packages are available to you according to your interesets. </p>
           </div>
           <ul class="unstyle-list clearfix">
-            <li><a href="img/gallery1.png">
+            <li><a href="img/gallery1.png" data-lightbox="picture">
             <img src="img/gallery1.png"></a></li>
-            <li><a href="img/gallery2.png">
+            <li><a href="img/gallery2.png" data-lightbox="picture">
             <img src="img/gallery2.png"></a></li>
-            <li><a href="img/gallery3.png">
+            <li><a href="img/gallery3.png" data-lightbox="picture">
             <img src="img/gallery3.png"></a></li>
-            <li><a href="img/gallery4.png">
+            <li><a href="img/gallery4.png" data-lightbox="picture">
             <img src="img/gallery4.png"></a></li>
-            <li><a href="img/gallery5.png">
+            <li><a href="img/gallery5.png" data-lightbox="picture">
             <img src="img/gallery5.png"></a></li>
-            <li><a href="img/gallery6.png">
+            <li><a href="img/gallery6.png" data-lightbox="picture">
             <img src="img/gallery6.png"></a></li>
           </ul>
         </div>
       </section>
       </section>
-      <section id="Hours">
-      <section class="hours">
+      <section class="hours" id="Hours">
         <div class="container">
           <div class="title">
               <div>
@@ -293,7 +275,6 @@
           </ul>
         </div>
       </section>
-      </section>
     </main>
     
     <footer class="footerContainer">
@@ -312,7 +293,7 @@
     <div class="container">
       <a id="top"></a>
     </div>
-    
+    <!--Modal-->
     <div class="modal">
       <div class="modal-wrap text-center">
         <div class="modal-inner">
@@ -358,6 +339,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/jquery.flexslider.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 
 </html>

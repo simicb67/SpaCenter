@@ -51,18 +51,18 @@
 }
 .flexslider .hero_1{
     background-image: url('../img/hero.png');
-    height: 500px;
+    height: 400px;
     background-position: 48% 33%;
 }
 .flexslider .hero_2{
     background-image: url('../img/hero2.png');
-    height: 500px;
+    height: 400px;
     background-position: 48% 50%;
 }
 .flexslider .hero_3{
     background-image: url('../img/hero3.png');
-    height: 500px;
-    background-position: 25% 50%;
+    height: 400px;
+    background-position: 10% 50%;
 }
 /*.flexslider .slides img {
   width: auto;
@@ -285,6 +285,25 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
+
+@media screen and (min-width: 768px) {
+  .flexslider .hero_1{
+    background-image: url('../img/hero.png');
+    height: 500px;
+    background-position: 48% 33%;
+}
+.flexslider .hero_2{
+    background-image: url('../img/hero2.png');
+    height: 500px;
+    background-position: 48% 50%;
+}
+.flexslider .hero_3{
+    background-image: url('../img/hero3.png');
+    height: 500px;
+    background-position: 10% 50%;
+}
+}
+
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;

@@ -164,7 +164,9 @@ header {
 }
 .header-logo {
     display: inline-block; /*!!!*/ 
-
+}
+.header-logo img {
+    width: 75%;
 }
 nav {
     display: none;  /*dont show menu*/
@@ -176,6 +178,7 @@ nav {
     background:#bb2f5c;
     text-align: center;
     color: #000;
+    z-index: 11;
 }
 nav.open {
     display: table;
@@ -191,7 +194,7 @@ nav a {
     padding:5px 10px;
 }
 nav li {
-    list-style-type: none; /*list style without disc!*/
+    list-style-type: none; 
 }
 nav .btn{
     background:#ece4e1;
@@ -219,11 +222,10 @@ nav .btn{
     top: -2px;
 }
 .burger {
-    width: 44px;
-    height: 25px;
+    width: 40px;
     padding: 5px 0;
     float: right;
-    margin-top: 22px;
+    margin-top: 10px;
 }
 .burger span {
     width: 100%;
@@ -236,18 +238,11 @@ nav .btn{
     margin-top: 0;
 }
 /*End Header*/
-
-/*Hero section*/
-/*.hero {
-    background-image: url('../img/hero.png');
-    height: 500px;
-    background-position: 48% 50%;
-    
-}*/
-.hero-c {
-    padding-left: 15px;
-    padding-right: 15px;
+main {
+    overflow: hidden;
 }
+/*Hero section*/
+
 .hero h1 {
     font-size: 2.8em;
     font-family: 'Pacifico', cursive;
@@ -258,21 +253,31 @@ nav .btn{
 }
 .hero p {
     margin-top: 0px;
-    padding-top:70px ;
+    padding-top:70px;
     color:#fff;
     text-align: center;
+    position: relative;
 }
-.hero hr{
-    width: 35%;
-}
-.line {
-    padding-left: 39%;
+.hero span::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #fff;
+    width: 70px;
+    margin: 0 auto;
 }
 .hero .btn {
     color:#fff;
     font-size: 2.2em;
     padding: 3px 15px;
-    margin: 13%;
+}
+.hero .btn {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 250px;
 }
 /*End hero section*/
 
@@ -311,6 +316,16 @@ strong {
 .serv-img {
     order: 1;
 }
+.serv strong {
+    position: relative;
+    color:#000;
+    
+}
+.serv span {
+    position: absolute;
+    color:#bb2f5c;
+    margin-left:40px;
+}
 
 /*massage*/
 .massage {
@@ -324,7 +339,8 @@ strong {
 .membership-container {
     background-color: #ece4e1;
     margin-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 15px;
 }
 .membership h2 {
     font-size: 5em;
@@ -398,12 +414,9 @@ i {
     height: 0;
     padding-bottom: 56.25%; /* 9/16x100 for 16:9 image format*/
     overflow: hidden;
-    position: relative;
 }
 .gallery li img {
-    width: 100%;
-    height: auto;
-    position: absolute;
+    display: block;
     padding: 2px;
 }
 /*end gallery*/
@@ -479,9 +492,7 @@ i {
 /*footer*/
 .footerContainer {
     max-width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding: 10px;
     margin:0 auto;
     background-color: #ece4e1;
 }
@@ -581,6 +592,9 @@ input[type="time"]:before {
         padding-left: 15px;
         padding-right: 15px;
     }
+    .header-logo img {
+        width: 100%;
+    }
     nav {
         display: block;
         position: initial;
@@ -626,9 +640,6 @@ input[type="time"]:before {
         font-size: 3.6em;
         padding-bottom: 45px; 
     }
-    .hero .btn {
-        margin: 34%;
-    }
 /*End hero section*/
 
 /*Services*/ 
@@ -660,7 +671,6 @@ p {
 }
 strong {
     font-size: 2.4em;
-    color:#bb2f5c;
 }
 .wrapper {
     display: flex;
@@ -687,6 +697,10 @@ strong {
 /*End services*/
 
 /*membership*/
+.membership-container {
+    margin-top:0px;
+    padding-bottom: 40px;
+}
 .membership p {
     font-size: 1.6em;
 }
@@ -708,7 +722,32 @@ strong {
     margin-right: 1%;
     margin-bottom: 1%;
     padding-bottom: 27.56%; /* 9/16x49 because we have 2 columns*/
+    position: relative;
     float: left;
+    }
+/*zoom icon*/
+
+    .gallery li a::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,.44);
+        background-image: url(../img/zoom-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+        z-index: 1;
+
+    }
+    .gallery li a:hover::after {
+        opacity: 1;
+        transition: opacity .3s ease-out;  
+        z-index: 0; 
     }
 /*end gallery*/
 
@@ -749,9 +788,6 @@ strong {
 /*end footer*/
 
 /*modal*/
-.modal-wrap {
-        padding: 
-      }
       form {
         text-align: left;
       }
@@ -774,27 +810,9 @@ strong {
       legend {
         margin-left: 10px;
         text-align: center;
-      }
-/*zoom icon*/
-    .gallery li::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: rgba(0,0,0,.44);
-        background-image: url(../img/zoom-icon.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        cursor: pointer;
-        opacity: 0;
-        transition: opacity .3s ease-in;
-    }
-    .gallery li:hover::after {
-        opacity: 1;
-        transition: opacity .3s ease-out;   
-    }
+      } 
+/*end modal*/
+
 }
 /*end modal*/
 /*Header 992*/
@@ -824,9 +842,6 @@ strong {
     .hero h1 {
         font-size:4em;
         padding-bottom: 30px;
-    }
-    .hero .btn {
-        margin:37%;
     }
 /*End hero section*/
 
@@ -860,6 +875,9 @@ p {
 /*end services*/
 
 /*membership*/
+.membership-container {
+    padding-bottom: 50px;
+}
 .membership h3 {
     margin-top: -200px;
     margin-left: -50px;
@@ -950,9 +968,6 @@ p {
     .hero h1 {
         font-size:4.8em;
         padding-bottom: 10px;
-    }
-    .hero .btn {
-        margin:41%;
     }
 /*End hero section*/
 
