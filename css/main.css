@@ -197,12 +197,6 @@ nav a {
 nav a:hover {
     color: #000;
 }
-.btn a:hover {
-    color: red;
-}
-nav li {
-    list-style-type: none; 
-}
 nav .btn{
     background:#ece4e1;
     font-size: 3.6em;
@@ -251,6 +245,9 @@ main {
 /*Hero section*/
 
 .hero h1 {
+    height: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 2.8em;
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -471,7 +468,7 @@ i {
     text-align: center;
     border-radius: 20px;
     position: fixed;
-    bottom: 30px;
+    bottom: 60px;
     right: 30px;
     transition: background-color .3s, opacity .5s, visibility .5s;
     opacity: 0;
@@ -576,7 +573,7 @@ input::placeholder {
 }
 input:focus {
     outline: none;
-    border-color: green;
+    border-color: #bb2f5c;
 }
 input.btn {
     max-width: 300px;
