@@ -505,8 +505,12 @@ i {
 .logo-f {
     display: inline-block;
 }
+.footer p {
+    margin-top: -19px;
+    padding-left: 60px;
+}
 .footer ul {
-    padding-top: 65px;
+    padding-top: 33px;
     display: inline-flex;
     float: right;
 }
@@ -787,8 +791,12 @@ strong {
     padding-left: 15px;
     padding-right: 15px;
 }
+.footer p {
+    margin-top: -21px;
+    padding-left: 87px;
+}
 .footerContainer ul {
-    padding-top: 80px;
+    padding-top: 45px;
 }
 .footerContainer li img {
     max-width: 70px;
@@ -932,6 +940,12 @@ p {
 /*end hours*/
 
 /*footer*/
+.footer p {
+    margin-top: -23px;
+}
+.footer ul {
+    padding-top: 35px;
+}
 .footerContainer {
     padding-left: 25px;
     padding-right: 25px;
